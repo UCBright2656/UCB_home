@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブロック落下ゲーム</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #game-board {
+            width: 300px;
+            height: 500px;
+            border: 1px dashed black;
+            position: relative;
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .block {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            position: absolute;
+        }
+        .cell {
+            border: 1px dashed black;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-board"></div>
+
+    <script>
+        const gameBoard = document.getElementById('game-board');
+        const blockSize = 60;
+        const numRows = 6;
+        const numCols = 5;
+
+        let interval;
+        let currentBlock;
+        let blocks = [];
+
+        function createBlock() {
+            const block = document.createElement('div');
+            block.className = 'block';
+            block.style.left = Math.floor(Math.random() * numCols) * blockSize + 'px';
+            gameBoard.appendChild(block);
+            return block;
+        }
+
+        function moveBlock() {
+            const top = parseInt(currentBlock.style.top || 0);
+            currentBlock.style.top = (top + blockSize) + 'px';
+
+            if (top >= (numRows - 1) * blockSize || checkCollision()) {
+                clearInterval(interval);
+                blocks.push(currentBlock);
+                currentBlock = null;
+
+                // Check if the game is over
+                if (blocks.some(block => parseInt(block.style.top) <= 0)) {
+                    alert('Game Over!');
+                    clearInterval(interval);
+                } else {
+                    startGame();
+                }
+            }
+        }
+
+        function checkCollision() {
+            const blockLeft = parseInt(currentBlock.style.left);
+            const blockTop = parseInt(currentBlock.style.top);
+
+            const otherBlocks = blocks;
+            return otherBlocks.some(block => {
+                const left = parseInt(block.style.left);
+                const top = parseInt(block.style.top);
+                return blockTop + blockSize === top && blockLeft === left;
+            });
+        }
+
+        function startGame() {
+            if (!currentBlock) {
+                currentBlock = createBlock();
+                currentBlock.style.top = '0px';
+                interval = setInterval(moveBlock, 500);
+            }
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowDown') {
+                moveBlock();
+            }
+        });
+
+        startGame();
+    </script>
+</body>
+</html>
