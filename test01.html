@@ -1,11 +1,126 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCBrghtのテスト用</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #game-container {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grid-cell {
+    width: 50px;
+    height: 50px;
+    border: 1px dashed #000;
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+  #player {
+    width: 50px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .block {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+  }
+</style>
 </head>
 <body>
-    <h1>🌟 Optimus Servers - 通称オプ鯖 🌟</h1>
+<div id="game-container">
+  <div id="player"></div>
+  <div id="grid-container"></div>
+</div>
+<script>
+  const gameContainer = document.getElementById("game-container");
+  const player = document.getElementById("player");
+  const gridContainer = document.getElementById("grid-container");
+
+  let playerPosition = 0;
+  const gridSize = 50;
+  const blockWidth = 50;
+  const blockHeight = 50;
+  const blocks = [];
+
+  function createGrid() {
+    const numRows = gameContainer.clientHeight / gridSize;
+    const numCols = gameContainer.clientWidth / gridSize;
+
+    for (let row = 0; row < numRows; row++) {
+      for (let col = 0; col < numCols; col++) {
+        const cell = document.createElement("div");
+        cell.className = "grid-cell";
+        cell.style.top = row * gridSize + "px";
+        cell.style.left = col * gridSize + "px";
+        gridContainer.appendChild(cell);
+      }
+    }
+  }
+
+  function movePlayer(event) {
+    if (event.key === "ArrowLeft" && playerPosition > 0) {
+      playerPosition -= gridSize;
+    } else if (event.key === "ArrowRight" && playerPosition < gameContainer.clientWidth - gridSize) {
+      playerPosition += gridSize;
+    }
+    player.style.left = playerPosition + "px";
+  }
+
+  document.addEventListener("keydown", movePlayer);
+
+  createGrid();
+
+  function createBlock() {
+    const block = document.createElement("div");
+    block.className = "block";
+    block.style.left = Math.floor(Math.random() * (gameContainer.clientWidth / gridSize)) * gridSize + "px";
+    gridContainer.appendChild(block);
+
+    let top = 0;
+    let isCollision = false;
+    const blockInterval = setInterval(() => {
+      top += gridSize;
+      if (!isCollision) {
+        block.style.top = top + "px";
+        isCollision = checkCollision(block, top);
+      }
+
+      if (top >= gameContainer.clientHeight - gridSize || isCollision) {
+        clearInterval(blockInterval);
+        top = (Math.floor((top - blockHeight) / gridSize) * gridSize) + gridSize;
+        block.style.top = top + "px";
+        blocks.push({ element: block, top });
+      }
+    }, 500);
+  }
+
+  function checkCollision(currentBlock, top) {
+    for (const { element, top: blockTop } of blocks) {
+      if (element !== currentBlock && top === blockTop + blockHeight) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  setInterval(createBlock, 2000);
+</script>
 </body>
 </html>
+
