@@ -109,6 +109,14 @@ h2{
     padding: 5px; /* Add padding to provide space around text */
 }
 
+h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    background-color: #43B100; /* Light orange background color */
+    padding: 5px; /* Add padding to provide space around text */
+}
+
 .missions {
     background-color: #fff;
     padding: 20px;
