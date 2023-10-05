@@ -48,6 +48,7 @@ nav ul li a {
     font-size: 36px;
     margin-bottom: 20px;
 }
+
 /* Reset some default styles for better consistency */
 body, h1, h2, p {
     margin: 0;
@@ -85,6 +86,12 @@ body, h1, h2, p {
     font-size: 14px;
     line-height: 1.5;
 }
+
+/* Add margin to <p> elements for paragraph spacing */
+p {
+    margin-bottom: 10px;
+}
+
 .missions {
     background-color: #fff;
     padding: 20px;
@@ -103,3 +110,4 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
