@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #1e1;
+    background-color: green;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -105,8 +105,8 @@ p {
 /* Mission card styles go here */
 
 footer {
-    background-color: #1e1;
-    color: #f11;
+    background-color: green;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
 }
