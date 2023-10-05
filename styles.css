@@ -92,6 +92,12 @@ p {
     margin-bottom: 10px;
 }
 
+/* Add margin to <h2> elements and other headings for spacing */
+h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 .missions {
     background-color: #fff;
     padding: 20px;
@@ -104,8 +110,9 @@ p {
 
 /* Mission card styles go here */
 
+/* Change the background color of the footer to green */
 footer {
-    background-color: #111;
+    background-color: green;
     color: #fff;
     text-align: center;
     padding: 10px 0;
