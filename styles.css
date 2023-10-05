@@ -1,0 +1,105 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+/* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define the container for news tiles */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between news tiles */
+    justify-content: center; /* Center-align the tiles horizontally */
+    background-color: black; /* Background color for the container */
+    padding: 20px;
+}
+
+/* Style individual news tiles */
+.news-tile {
+    width: 300px; /* Adjust the width as needed */
+    background-color: #202021; /* Background color for news tiles */
+    color: white; /* Text color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for tiles */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow for tiles */
+}
+
+/* Style the news tile headers */
+.news-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style the news tile content */
+.news-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.missions {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.missions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Mission card styles go here */
+
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
