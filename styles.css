@@ -138,8 +138,11 @@ h1{
 .container {
       position: relative;
       text-align: center;
-    text-decoration: none;
     }
+
+.container a {
+    text-decoration: none; /* アンダーバーを非表示にする */
+}
 
 .missions {
     background-color: #fff;
