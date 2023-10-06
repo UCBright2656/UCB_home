@@ -141,7 +141,7 @@ h1{
     }
 
 .container p {
-    text-decoration: none; /* アンダーバーを非表示にする */
+    text-decoration: none; /* ボタンの下線を削除 */
 }
 
 .missions {
