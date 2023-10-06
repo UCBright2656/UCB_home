@@ -123,11 +123,6 @@ h1{
     padding: 5px; /* Add padding to provide space around text */
 }
 
-#responsive-image {
-  width: 100%;
-  height: auto;
-}
-
 .missions {
     background-color: #fff;
     padding: 20px;
