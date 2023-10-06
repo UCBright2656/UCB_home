@@ -143,4 +143,11 @@ footer {
     padding: 10px 0;
 }
 
+/* Make images responsive to the width of the viewport */
+img {
+    width: 100%;
+    height: auto;
+}
+
+
 
