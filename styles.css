@@ -140,8 +140,8 @@ h1{
       text-align: center;
     }
 
-.container p {
-    text-decoration: none; /* ボタンの下線を削除 */
+.link-without-underline {
+  text-decoration: none;
 }
 
 .missions {
