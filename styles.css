@@ -138,7 +138,6 @@ h1{
 .container {
       position: relative;
       text-align: center;
-      text-decoration: none; /* ボタンの下線を削除 */
     }
 
 .missions {
