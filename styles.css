@@ -133,17 +133,12 @@ h1{
       padding: 10px 20px; /* ボタンの余白を調整 */
       border: none; /* ボタンのボーダーを削除 */
       cursor: pointer; /* ボタンにポインターカーソルを設定 */
-    text-decoration: none;
     }
 
 .container {
       position: relative;
       text-align: center;
     }
-
-.link-without-underline {
-  text-decoration: none;
-}
 
 .missions {
     background-color: #fff;
