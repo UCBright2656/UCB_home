@@ -130,6 +130,11 @@ h1{
       transform: translate(-50%, -50%);
     }
 
+.container {
+      position: relative;
+      text-align: center;
+    }
+
 .missions {
     background-color: #fff;
     padding: 20px;
