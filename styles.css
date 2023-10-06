@@ -140,7 +140,7 @@ h1{
       text-align: center;
     }
 
-.container a {
+.container p {
     text-decoration: none; /* アンダーバーを非表示にする */
 }
 
