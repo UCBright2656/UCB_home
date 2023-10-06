@@ -128,7 +128,7 @@ h1{
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #5CBA3C; /* ボタンの背景色を緑に設定 */
+      background-color: rgba(92, 186, 60, 0.5); /* 背景色を半透明にする */
       color: white; /* ボタンの文字色を白に設定 */
       padding: 10px 20px; /* ボタンの余白を調整 */
       border: none; /* ボタンのボーダーを削除 */
