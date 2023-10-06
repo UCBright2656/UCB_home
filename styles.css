@@ -133,6 +133,7 @@ h1{
       padding: 10px 20px; /* ボタンの余白を調整 */
       border: none; /* ボタンのボーダーを削除 */
       cursor: pointer; /* ボタンにポインターカーソルを設定 */
+    　text-decoration: none; /* ボタンの下線を削除 */
     }
 
 .container {
