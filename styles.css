@@ -162,7 +162,7 @@ footer {
 }
 
 /* Make images responsive to the width of the viewport */
-img {
+.bigpic {
     width: 100%;
     height: auto;
 }
