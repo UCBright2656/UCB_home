@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ucbright2656.github.io/UCB_home/styles.css">
+    <link rel="icon" href="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png">
+    <title>Optimus Servers</title>
+    <style>
+    body {
+      background-image: url('https://ucbright2656.github.io/UCB_home/picture/haikei_green.png');
+      background-size: cover; /* 画像をウィンドウ全体にフィットさせる */
+      background-repeat: no-repeat; /* 画像を繰り返し表示しない */
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
+                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
+                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
+        </div>
+    </header>
+    
+    <h1>寄付についての概要</h1>
+<p>寄付をして下さった方々の紹介は、<a href="https://ucbright2656.github.io/UCB_home/saba/kihushashoukai.html">こちら</a></p>
+
+<a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
+    <footer>
+        <p>&copy; 2023 OptimusInteractive</p>
+    </footer>
+</body>
+</html>
