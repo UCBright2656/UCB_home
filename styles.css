@@ -174,12 +174,12 @@ footer {
 
 /*ここから*/
 /* ページ全体をカバーするコンテナ */
-.container {
+.allcontainer {
     display: flex; /* フレックスボックスを使用して子要素を水平に配置 */
 }
 
 /* 本文の部分 */
-.content {
+.maincontent {
     flex: 1; /* 残りのスペースを全体の幅に合わせる */
 }
 
