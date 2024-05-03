@@ -172,7 +172,7 @@ footer {
     height: auto;
 }
 
-@media (min-width: 768px){//画面が大きいとき
+//@media (min-width: 768px){//画面が大きいとき
 
 .allcontainer {
     display: flex; /* フレックスボックスを使用して子要素を水平に配置 */
