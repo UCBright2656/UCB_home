@@ -172,7 +172,6 @@ footer {
     height: auto;
 }
 
-@media (min-width: 768px){//画面が大きいとき
 .allcontainer {
     display: flex; /* フレックスボックスを使用して子要素を水平に配置 */
     width: 100%; /* 親要素がページ全体の横幅を持つようにする */
@@ -189,8 +188,6 @@ footer {
     width: 250px; /* メニューの幅を指定 */
     flex-shrink: 0; /* メニューが必要以上に縮むのを防止 */
     flex-grow: 1; /* 残りのスペースを全体の幅に合わせる */
-}
-
 }
 
 @media (max-width: 768px){//画面が小さいとき
