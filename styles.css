@@ -190,17 +190,18 @@ footer {
     flex-grow: 1; /* 残りのスペースを全体の幅に合わせる */
 }
 
-@media (max-width: 768px){//画面が小さいとき
-.allcontainer {
-    width: 100%; /* 親要素がページ全体の横幅を持つようにする */
-}
 
-/* 本文の部分 */
-.maincontent {
-}
-
-/* メニューの部分 */
-.menu {
-}
-
+/* 768px以下の場合のスタイル */
+@media screen and (max-width: 768px) {
+    .allcontainer {
+        flex-direction: column; /* 子要素を縦に配置 */
+    }
+    
+    .maincontent {
+        margin-right: 0; /* メディアクエリでのメニューとの間隔をリセット */
+    }
+    
+    .menu {
+        width: 100%; /* メニューの幅を100%にする */
+    }
 }
