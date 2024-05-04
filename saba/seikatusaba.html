@@ -13,21 +13,18 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").load("https://ucbright2656.github.io/UCB_home/menu.html"); 
+            $("#header").load("https://ucbright2656.github.io/UCB_home/header.html"); 
+        });
+  </script>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
-                <li><a href="https://www.youtube.com/@OptimusMovies2532/featured">Our Youtube</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
-        </div>
-    </header>
+    <div id="header"></div>
     
 <h1>生活鯖についての概要</h1>
 <img class="bigpic" src="https://ucbright2656.github.io/UCB_home/picture/op_sigen1.png" alt="">
@@ -35,7 +32,10 @@
 自由にサバイバルや建築が出来ます。<br>
 生活鯖には、平面及び立体のオンラインの地図があり、
     <a href="https://t.co/qOwO9MhQGx">公式Discord鯖</a>からも閲覧可能です。</p>
-
+    
+<div class="allcontainer">
+    <div class="maincontent">
+        
 <h2>ルール</h2>
 <li>どのワールドに拠点を置こうが、資源を採取しようが自由</li>
 <li>他プレイヤーからの保護を目的とした土地の保護システムは状況を見て順次導入</li>
@@ -49,6 +49,12 @@
 <li>自動コンポスター(植物系ゴミ箱として使用を想定)</li>
 <li>雪製造所(赤石・ピストン・TNT等不使用/アイスゴーレムの数の制限を検討中)</li>
 
+    </div>
+
+    <div id="menu"></div>
+
+</div>
+    
 <a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
     <footer>
         <p>&copy; 2023 OptimusInteractive</p>
