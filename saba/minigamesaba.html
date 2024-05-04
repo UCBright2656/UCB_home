@@ -13,27 +13,27 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").load("https://ucbright2656.github.io/UCB_home/menu.html"); 
+            $("#header").load("https://ucbright2656.github.io/UCB_home/header.html"); 
+        });
+  </script>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
-                <li><a href="https://www.youtube.com/@OptimusMovies2532/featured">Our Youtube</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
-        </div>
-    </header>
+    <div id="header"></div>
     
 <h1>ミニゲーム鯖についての概要</h1>
 <img class="bigpic" src="https://ucbright2656.github.io/UCB_home/picture/mincraft_ai_battel3.png" alt="">
 <p>様々なミニゲームを遊べます。<br>
 ミニゲームでの勝敗は経済システムの通貨と連携しています。</p>
 
+<div class="allcontainer">
+    <div class="maincontent">
+        
 <h2>各ミニゲームについて</h2>
 
 <h3>アスレチック</h3>
@@ -45,6 +45,12 @@
 
 <h3>個人戦戦PVP</h3>
 <p>参加者全員が敵同士のバトルロイヤルです。</p>
+
+    </div>
+
+    <div id="menu"></div>
+
+</div>
     
 <a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
     <footer>
