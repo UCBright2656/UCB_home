@@ -15,6 +15,14 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#includedContent").load("menu.html"); 
+        });
+    </script>
+    
 </head>
 <body>
     <header>
@@ -84,7 +92,7 @@
 
     </div>
 
-    <iframe src="menu.html" frameborder="0" scrolling="no"></iframe>
+    <div id="includedContent"></div>
 
 </div>
 
