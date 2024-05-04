@@ -13,24 +13,24 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").load("https://ucbright2656.github.io/UCB_home/menu.html"); 
+            $("#header").load("https://ucbright2656.github.io/UCB_home/header.html"); 
+        });
+  </script>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
-                <li><a href="https://www.youtube.com/@OptimusMovies2532/featured">Our Youtube</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
-        </div>
-    </header>
+    <div id="header"></div>
     
     <h1>鯖への参加方法</h1>
-    
+
+<div class="allcontainer">
+    <div class="maincontent">
+        
 <h2>①公式Discord鯖に参加する/公式Xをフォローする</h2>
 <p> <a href="https://t.co/qOwO9MhQGx">公式Discord鯖</a>に参加しましょう。<br>
 <a href="https://twitter.com/optimus_servers">公式X</a>
@@ -76,6 +76,12 @@
 Java版なら「マルチプレイ」から、<br>
 統合版なら「サーバー」の「追加のサーバー」から<br>
 を選択して「サーバーに接続」を押してオプ鯖に参加できます。</p>
+
+    </div>
+
+    <div id="menu"></div>
+
+</div>
     
 <p><a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
     <footer>
