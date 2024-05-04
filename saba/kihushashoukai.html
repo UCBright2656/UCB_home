@@ -13,26 +13,27 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").load("https://ucbright2656.github.io/UCB_home/menu.html"); 
+            $("#header").load("https://ucbright2656.github.io/UCB_home/header.html"); 
+        });
+  </script>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
-                <li><a href="https://www.youtube.com/@OptimusMovies2532/featured">Our Youtube</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
-        </div>
-    </header>
+    <div id="header"></div>
     
     <h1>寄付をして下さった方々の紹介</h1>
 <p>当鯖に寄付をしていただき誠にありがとうございます。</p>
 <p>当鯖の発展のために使わせていただきます。</p>
 <p>以下は寄付をして下さった方々です。</p>
+
+<div class="allcontainer">
+    <div class="maincontent">
+        
 <h2>〇〇円～〇〇円</h2>
 <li>A氏</li>
 <li>B氏</li>
@@ -46,6 +47,12 @@
 <h2>寄付のやり方と特典</h2>
 <p>寄付についての説明は、<a href="https://ucbright2656.github.io/UCB_home/saba/kihusetumei.html">こちら</a></p>
 
+    </div>
+
+    <div id="menu"></div>
+
+</div>
+    
 <a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
     <footer>
         <p>&copy; 2023 OptimusInteractive</p>
