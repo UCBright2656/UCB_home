@@ -13,23 +13,24 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").load("https://ucbright2656.github.io/UCB_home/menu.html"); 
+            $("#header").load("https://ucbright2656.github.io/UCB_home/header.html"); 
+        });
+  </script>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
-                <li><a href="https://www.youtube.com/@OptimusMovies2532/featured">Our Youtube</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
-        </div>
-    </header>
+    <div id="header"></div>
     
     <h1>プライバシーポリシー</h1>
+
+<div class="allcontainer">
+    <div class="maincontent">
+        
     <h2>①情報の使用目的</h2>
     <ul>
         <li>サービス提供およびカスタマーサポート: 収集した情報は、ユーザー様にサービスを提供し、カスタマーサポートを提供するために使用されます。</li>
@@ -49,6 +50,12 @@
     <h2>③情報のセキュリティ</h2>
     <p>当鯖は、ユーザーの情報を適切に保護するための技術的、物理的、組織的なセキュリティ対策を講じます。これにより、情報の不正アクセスや漏洩を防ぎます。</p>
 
+    </div>
+
+    <div id="menu"></div>
+
+</div>
+    
 <a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
     <footer>
         <p>&copy; 2023 OptimusInteractive</p>
