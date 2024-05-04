@@ -13,26 +13,26 @@
       background-repeat: no-repeat; /* 画像を繰り返し表示しない */
     }
   </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#menu").load("https://ucbright2656.github.io/UCB_home/menu.html"); 
+            $("#header").load("https://ucbright2656.github.io/UCB_home/header.html"); 
+        });
+  </script>
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://ucbright2656.github.io/UCB_home/">Home</a></li>
-                <li><a href="https://discord.gg/zTrrBx8SCR">Our Discord</a></li>
-                <li><a href="https://twitter.com/optimus_servers">Our X</a></li>
-                <li><a href="https://www.youtube.com/@OptimusMovies2532/featured">Our Youtube</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="https://ucbright2656.github.io/UCB_home/picture/op_logo1.png" alt="OptimusEntertainment Logo">
-        </div>
-    </header>
+   <div id="header"></div>
     
     <h1>寄付についての概要</h1>
 <p>寄付をしていただくと、当鯖の発展のために使わせていただきます。</p>
 <p>また寄付をして下さった方には、金額に応じて様々な特典と交換することのできる「ポイント」と交換することができます。</p>
-    
+
+<div class="allcontainer">
+    <div class="maincontent">
+        
 <h2>寄付のやり方</h2>
 次のリンクから寄付フォームにとぶことが出来ます。
 <a href="https://forms.gle/6GgkGWJVC5XmdNqt6">寄付受付フォーム</a>  <br>
@@ -74,6 +74,11 @@
 <h2>寄付をして下さった方々の紹介ページ</h2>
 <p>寄付をして下さった方々の紹介は、<a href="https://ucbright2656.github.io/UCB_home/saba/kihushashoukai.html">こちら</a></p>
 
+    </div>
+    
+    <div id="menu"></div>
+</div>
+    
 <a href="https://ucbright2656.github.io/UCB_home/">ホームに戻る</a>  <br> </p>
     <footer>
         <p>&copy; 2023 OptimusInteractive</p>
