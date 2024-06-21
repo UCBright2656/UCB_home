@@ -224,7 +224,7 @@ footer {
 /*スライドショー*/
 .slideshow-container {
     position: relative;
-    width: 80vw; /* 幅を画面いっぱいに */
+    width: 100vw; /* 幅を画面いっぱいに */
     overflow: hidden;
     height: auto;
 }
@@ -247,7 +247,7 @@ footer {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: green;
+    color: lime;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
