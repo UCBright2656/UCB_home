@@ -224,10 +224,8 @@ footer {
 /*スライドショー*/
 .slideshow-container {
     position: relative;
-    max-width: 600px;
-    margin: auto;
+    width: 100vw; /* 幅を画面いっぱいに */
     overflow: hidden;
-    width: 100%;
     height: auto;
 }
 .slides {
