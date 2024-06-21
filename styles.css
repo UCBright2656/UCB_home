@@ -259,6 +259,6 @@ footer {
     border-radius: 3px 0 0 3px;
 }
 .next {
-    right: -50;
+    right: 1px;
     border-radius: 0 3px 3px 0;
 }
