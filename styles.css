@@ -106,6 +106,7 @@ h3, h4, h5, h6 {
     background-color: #DFFF00; /* Light orange background color */
     padding: 5px; /* Add padding to provide space around text */
     border-radius: 10px; /* Add rounded corners */
+    border: 2px solid #000; /* Add border */
 }
 
 h2{
@@ -115,6 +116,7 @@ h2{
     background-color: #B5E61D; /* Light orange background color */
     padding: 5px; /* Add padding to provide space around text */
     border-radius: 10px; /* Add rounded corners */
+    border: 2px solid #000; /* Add border */
 }
 
 h1{
@@ -124,6 +126,7 @@ h1{
     background-color: #43B100; /* Light orange background color */
     padding: 5px; /* Add padding to provide space around text */
     border-radius: 10px; /* Add rounded corners */
+    border: 2px solid #000; /* Add border */
 }
 
 .centered-button {
