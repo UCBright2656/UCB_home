@@ -171,7 +171,7 @@ footer {
 .bigpic {
     width: 80%;
     height: auto;
-    display: flex;
+    display: grid;
     justify-content: center; /* 横方向の中央揃え */
 }
 
