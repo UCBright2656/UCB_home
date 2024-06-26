@@ -171,8 +171,6 @@ footer {
 .bigpic {
     width: 60%;
     height: auto;
-    display: grid;
-    justify-content: center; /* 横方向の中央揃え */
 }
 
 .smallpic {
