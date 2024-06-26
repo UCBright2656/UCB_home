@@ -169,7 +169,7 @@ footer {
 
 /* Make images responsive to the width of the viewport */
 .bigpic {
-    width: 80%;
+    width: 60%;
     height: auto;
     display: grid;
     justify-content: center; /* 横方向の中央揃え */
