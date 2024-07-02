@@ -273,3 +273,14 @@ footer {
     right: 10px;
     border-radius: 0 3px 3px 0;
 }
+
+/*box*/
+.box {
+    background-color: #ccff33; /* Light green background */
+    border: 2px solid #000000; /* Black border */
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 80%; /* Adjust the width as needed */
+}
