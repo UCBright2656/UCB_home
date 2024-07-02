@@ -195,7 +195,7 @@ footer {
     flex-shrink: 0; /* メニューが必要以上に縮むのを防止 */
     flex-grow: 1; /* 残りのスペースを全体の幅に合わせる */
 
-    background-color: #ccff33; /* Light green background */
+    background-color: #A4FF90; /* Light green background */
     border: 2px solid #000000; /* Black border */
     padding: 10px;
     margin: 20px;
