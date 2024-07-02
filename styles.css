@@ -194,6 +194,13 @@ footer {
     width: 250px; /* メニューの幅を指定 */
     flex-shrink: 0; /* メニューが必要以上に縮むのを防止 */
     flex-grow: 1; /* 残りのスペースを全体の幅に合わせる */
+
+    background-color: #ccff33; /* Light green background */
+    border: 2px solid #000000; /* Black border */
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 
@@ -272,15 +279,4 @@ footer {
 .next {
     right: 10px;
     border-radius: 0 3px 3px 0;
-}
-
-/*box*/
-.box {
-    background-color: #ccff33; /* Light green background */
-    border: 2px solid #000000; /* Black border */
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    width: 80%; /* Adjust the width as needed */
 }
